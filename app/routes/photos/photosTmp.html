@@ -1,0 +1,19 @@
+<div class="jumbotron page-titles"><h1 class="text-center">SURFING SPOTS <small><span class="subtitle">Orange County</span></small></h1></div>
+ 
+
+ <div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-4 clearfix" ng-repeat="spot in spots">
+    <div class="thumbnail">
+     <div class="photos-image-container">
+         <img class="photos-images" ng-src="{{spot.image}}" alt="{{spot.spot}}">
+     </div>
+      
+      <div class="caption">
+        <h3 class="text-center">{{spot.spot}}</h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+

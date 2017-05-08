@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Myriad Pro Bold", san-serif;
+  overflow-x: hidden;
+  background: #f5f5f5; }
+
+.main-nav {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-around; }
+  @media screen and (max-width: 700px) {
+    .main-nav {
+      display: block;
+      height: auto; } }
+  .main-nav .nav-list {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%; }
+    @media screen and (max-width: 700px) {
+      .main-nav .nav-list {
+        width: 100%;
+        display: block;
+        text-align: center; } }
+    .main-nav .nav-list .nav-links {
+      display: inline-block;
+      color: #19a7d0;
+      list-style: none;
+      padding: 0px 12px;
+      font-size: 1.6em;
+      border-bottom: 3px solid #f5f5f5;
+      white-space: nowrap; }
+      @media screen and (max-width: 700px) {
+        .main-nav .nav-list .nav-links {
+          width: 100%;
+          display: block; } }
+    .main-nav .nav-list .nav-links:hover {
+      border-bottom: 3px solid #19a7d0;
+      cursor: pointer; }
+  .main-nav .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%; }
+    @media screen and (max-width: 700px) {
+      .main-nav .input-container {
+        width: 100%; } }
+    .main-nav .input-container .product-search {
+      margin-top: 15px;
+      width: 100%;
+      height: 30px;
+      border: 1px solid #19a7d0;
+      position: relative; }
+    .main-nav .input-container .shopping-icon {
+      color: #19a7d0;
+      font-size: 1.6em;
+      position: relative;
+      top: -27px;
+      left: 170px; }
+
+.page-titles {
+  background-color: #19a7d0;
+  color: white; }
+
+.image-container {
+  width: 100%;
+  margin: auto;
+  position: relative; }
+  .image-container .api-weather-info {
+    color: white;
+    padding: .4%; }
+
+.icons-container {
+  width: 40%;
+  height: 12vh;
+  background: white;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.07);
+  position: relative;
+  top: -5vh; }
+  @media screen and (max-width: 650px) {
+    .icons-container {
+      width: 100%;
+      top: 0; } }
+  .icons-container .icons {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; }
+    .icons-container .icons span {
+      display: block;
+      font-size: 1.7rem;
+      color: #999; }
+  .icons-container .icons:hover {
+    cursor: pointer; }
+    .icons-container .icons:hover span {
+      color: #19a7d0; }
+
+.api-list {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05); }
+
+#carousel-container {
+  width: 100%;
+  margin: auto; }
+  #carousel-container .carousel-div {
+    margin: 0;
+    padding: 0; }
+    #carousel-container .carousel-div .carousel-image-container {
+      width: 100%; }
+      #carousel-container .carousel-div .carousel-image-container .carousel-image {
+        width: 100%;
+        height: 100%; }
+
+.surfboard-box {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05); }
+
+.surfboards-image-container {
+  text-align: center;
+  max-width: 100%;
+  height: 40vh; }
+  .surfboards-image-container .surfboards-images {
+    width: 60%; }
+
+.surfboard-caption {
+  height: 18vh; }
+
+.surfboard-btn:hover {
+  background-color: #19a7d0;
+  color: white; }
+
+.surfboards-details-image-container {
+  text-align: center; }
+
+.feature-items {
+  list-style: none; }
+
+.about-box {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
+  position: relative; }
+
+.about-list-items {
+  list-style: none; }
+
+.about-img-container {
+  width: 50%;
+  display: inline-block;
+  padding: 1%; }
+  .about-img-container img {
+    width: 20%; }
+  .about-img-container .about-icons {
+    font-weight: bold;
+    font-size: 1.6rem; }
+
+.about-api-items {
+  list-style: none; }
+
+.about-links {
+  padding-left: 1%;
+  color: #19a7d0; }
+
+.gears-box {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05); }
+
+.surf-gears-image-container {
+  text-align: center;
+  max-width: 100%;
+  height: 40vh; }
+  .surf-gears-image-container .surf-gears-images {
+    width: 60%; }
+
+.surf-gears-caption {
+  height: 18vh; }
+
+.surf-gears-btn:hover {
+  background-color: #19a7d0;
+  color: white; }
+
+.surf-gears-details-image-container {
+  text-align: center; }
+
+.feature-items {
+  list-style: none; }
+
+
+.subtitle {
+  color: yellow; }
+
+.photos-image-container {
+  max-width: 100%;
+  max-height: 35vh;
+  overflow: hidden; }
+  .photos-image-container .photos-images {
+    width: 100%; }
+
+.angular-google-map-container {
+  height: 55vh; }
+

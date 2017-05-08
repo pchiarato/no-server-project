@@ -1,0 +1,25 @@
+<div class="thumbnail">
+    <ui-gmap-google-map center="map.center" zoom="map.zoom">
+
+
+        <ui-gmap-marker ng-repeat="marker in markers" idKey="marker.id" coords="marker.coords">
+            <ui-gmap-window>
+                <div>{{marker.window.title}}</div>
+            </ui-gmap-window>
+        </ui-gmap-marker>
+    </ui-gmap-google-map>
+</div>
+<br>
+
+
+<div class="row">
+    <div class="col-md-3" ng-repeat="spot in spotsInfo">
+       <div class="thumbnail api-list">
+           <div class="caption">
+                <p class="text-center">Name: {{spot.spot_name}}</p>
+           </div>
+       </div>
+       
+
+    </div>
+</div>

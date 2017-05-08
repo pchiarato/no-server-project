@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-1 clearfix">
+    <div class="thumbnail surfboard-box">
+     <div class="surfboards-details-image-container">
+        <img class="surfboards-images" ng-src="{{board.images}}" alt="{{board.title}}"></a>
+     </div>
+      
+      <div class="caption">
+        <h3 class="text-center">{{board.title}}</h3>
+        <small>Price: {{board.price | currency}} </small>
+      </div>
+      <p><a class="surfboard-btn btn btn-default" role="buttom" href="">Add to cart <i class="fa fa-shopping-cart"></i> </a></p>
+    </div>
+  </div>
+  <div class="col-md-4">
+      <div class="thumbnail surfboard-box">
+          <div class="caption">
+              <h3 class="text-center">
+                  {{board.title}}
+              </h3>
+              <p>{{board.description}}</p>
+              <hr>
+              <ul ng-repeat="feature in board.features">
+                  <li class="feature-items">{{feature}}</li>
+              </ul>
+              <img ng-src="{{board.brandImg}}" alt="{{board.brand}}">
+          </div>
+      </div>
+  </div>
+</div>

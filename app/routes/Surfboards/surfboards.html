@@ -1,0 +1,19 @@
+<div class="jumbotron page-titles"><h1 class="text-center">SURFBOARDS</h1></div>
+ 
+ 
+
+ <div class="row">
+  <div class="col-sm-4 col-md-4 clearfix" ng-repeat="board in boards">
+    <div class="thumbnail surfboard-box">
+     <div class="surfboards-image-container">
+         <a ui-sref="surfboardsDetails({id: board.id})"><img class="surfboards-images" ng-src="{{board.images}}" alt="{{board.title}}"></a>
+     </div>
+      
+      <div class="caption surfboard-caption">
+        <h3 class="text-center">{{board.title}}</h3>
+        <small>Price: {{board.price | currency}} </small>
+      </div>
+      <p><a class="surfboard-btn btn btn-default" role="buttom" href="">Add to cart <i class="fa fa-shopping-cart"></i> </a></p>
+    </div>
+  </div>
+</div>

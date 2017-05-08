@@ -1,0 +1,24 @@
+<div class="jumbotron page-titles"><h1 class="text-center">WEATHER</h1></div>
+   
+<div class="row">
+    <div class="col-md-4" ng-repeat="spot in spotsInfo">
+        <div class="thumbnail">
+            <div class="caption">
+                <h1 class="text-center">{{spot.spot_name}}</h1>
+                <small text-left>{{spot.county}}</small>
+                <hr>
+                <h4>Date: {{tideInfo[5].date}}</h4>
+                <h4>Tide: {{tideInfo[5].tide | limitTo:4}}</h4>
+                <h4>Tide meters: {{tideInfo[5].tide_meters | limitTo:4}}</h4>
+                <h4>Wind direction: {{windInfo[5].direction_text}}</h4>
+                <h4>Wind speed: {{windInfo[5].speed_mph | limitTo:4}} Mph</h4>
+                <h4>Water temp: &#8451; {{waterInfo.celcius}}</h4>
+                <h4>Water temp: &#8457; {{waterInfo.fahrenheit}}</h4>
+                <h4>Recommended bodyware: {{waterInfo.wetsuit}}</h4>
+                <h4>Weather Condition: {{weatherInfo.weather[0].description}}</h4>
+                <h4>Temp max: {{weatherInfo.main.temp_max}}</h4>
+                <h4>Temp min: {{weatherInfo.main.temp_min}}</h4>
+            </div>
+        </div>
+    </div>
+</div>

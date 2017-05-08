@@ -1,0 +1,19 @@
+<div class="jumbotron page-titles"><h1 class="text-center">SURF GEARS</h1></div>
+ 
+ 
+
+ <div class="row">
+  <div class="col-sm-6 col-md-4 clearfix" ng-repeat="gear in surfGears">
+    <div class="thumbnail gears-box">
+     <div class="surf-gears-image-container">
+         <a ui-sref="gearsDetails({id: gear.id})"><img class="surf-gears-images" ng-src="{{gear.images}}" alt="{{gear.title}}"></a>
+     </div>
+      
+      <div class="caption surf-gears-caption">
+        <h3 class="text-center">{{gear.title}}</h3>
+        <small>Price: {{gear.price | currency}} </small>
+      </div>
+      <p><a class="surf-gears-btn btn btn-default" role="buttom" href="#">Add to cart <i class="fa fa-shopping-cart"></i> </a></p>
+    </div>
+  </div>
+</div>
